@@ -1,0 +1,51 @@
+ERROR 2018-10-24 11:33:42,487 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-10-24 11:33:42,580 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 400 67797
+ERROR 2018-10-24 11:46:40,582 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-10-24 11:46:40,707 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 400 67841
+ERROR 2018-10-24 11:46:41,290 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-10-24 11:46:41,366 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 67709
+WARNING 2018-10-24 14:19:30,554 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 400 5196
+INFO 2018-10-24 14:19:30,602 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-10-24 14:19:30,630 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-10-24 14:19:30,643 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-10-24 14:19:30,650 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-10-24 14:19:30,659 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-10-24 14:19:30,660 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-10-24 14:19:30,667 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-10-24 14:19:30,673 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-10-24 14:19:30,678 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-10-24 14:19:30,679 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-10-24 14:19:30,795 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-10-24 14:19:31,357 base 152 Not Found: /favicon.ico
+WARNING 2018-10-24 14:19:31,359 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2159
+WARNING 2018-10-24 14:20:09,229 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:20:09,238 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+WARNING 2018-10-24 14:20:09,284 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 400 40
+WARNING 2018-10-24 14:20:09,285 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:20:09,286 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+WARNING 2018-10-24 14:20:27,165 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:20:27,166 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+ERROR 2018-10-24 14:20:27,174 exceptions 25 [<verifications.views.SMSCodeView object at 0x7fd29cdc9828>] Command # 1 (SETEX sms_code_17607162138 300 742390) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 14:20:27,175 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 35
+WARNING 2018-10-24 14:25:57,504 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:25:57,510 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 14:25:58,471 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+WARNING 2018-10-24 14:27:02,809 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:27:02,813 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 14:27:03,662 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+WARNING 2018-10-24 14:28:05,339 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 14:28:05,342 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 14:28:06,523 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+WARNING 2018-10-24 19:50:16,699 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 19:50:16,705 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+WARNING 2018-10-24 19:50:25,445 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 19:50:25,446 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 19:50:26,490 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+WARNING 2018-10-24 19:52:39,547 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 19:52:39,552 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 19:52:39,646 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+WARNING 2018-10-24 19:54:30,956 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 19:54:30,963 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+WARNING 2018-10-24 19:54:32,038 base 152 Not Found: /mobiles/17607162138/count/
+WARNING 2018-10-24 19:54:32,039 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 404 2204
+INFO 2018-10-24 19:54:32,065 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
