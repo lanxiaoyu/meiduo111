@@ -1,8 +1,8 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import User
-
-
+from rest_framework.generics import CreateAPIView
+from .serializers import UserCreateSerializer
 class UsernameCountView(APIView):
     def get(self,request,username):
         """查询用户名个数"""
@@ -26,3 +26,8 @@ class MobileCountView(APIView):
             'mobile':mobile,
             'count':count
         })
+
+class UserCreateView(CreateAPIView):
+    """创建用户对象"""
+   # queryset = 当前进行创建操作,不需要查询
+    serializer_class = UserCreateSerializer
