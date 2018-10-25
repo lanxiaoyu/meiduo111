@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+import datetime
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -201,13 +201,30 @@ LOGGING = {
 
 # drf
 REST_FRAMEWORK = {
-    # 异常处理
-    'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
+    #异常处理
+    'EXCEPTION_HANDLER':'utils.exceptions.exception_handler',
+    # 身份认证的方式:Jwt,session,basic
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        #前后端分离使用jwt验证
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        #访问admin后台时使用
+        'rest_framework.authentication.SessionAuthentication',
+    ),
 }
+# 过期时间为2小时
+
+import datetime
+JWT_AUTH = {
+    # timedelta 时间差
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=2),
+}
+
 
 # CORS白名单
 CORS_ORIGIN_WHITELIST = (
     'www.meiduo.site:8080',
+    "api.meiduo.site:8000",
+    # "127.0.0.1:8080",
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 

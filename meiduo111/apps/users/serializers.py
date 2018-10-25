@@ -1,6 +1,8 @@
 import re
 from django_redis import get_redis_connection
 from rest_framework import serializers
+from rest_framework_jwt.serializers import jwt_encode_handler
+from rest_framework_jwt.settings import api_settings
 from .models import User
 
 
@@ -14,8 +16,10 @@ class UserCreateSerializer(serializers.Serializer):
     5.allow:只输入 write_only
     6.mobile:输入 输出  不需要写
     7.sms_code: 只输入write_only
+    8.token:注册的时候不需要传入,需要输出,read_only
     """
     id = serializers.IntegerField(read_only=True)
+    token = serializers.CharField(read_only=True)
     username = serializers.CharField(
         min_length=5,
         max_length=20,
@@ -105,5 +109,16 @@ class UserCreateSerializer(serializers.Serializer):
         #密码加密
         user.set_password(validated_data.get("password"))
         user.save()
+
+        # 需要生成token
+        from rest_framework_jwt.settings import api_settings
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+
+
+        token = jwt_encode_handler(payload)  # header.payload.signature
+        # 为user添加token属性才能输出到客户端
+        user.token = token
         return user
 
