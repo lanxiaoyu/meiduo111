@@ -99,3 +99,71 @@ INFO 2018-10-25 15:35:12,222 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/
 INFO 2018-10-25 15:35:38,249 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
 INFO 2018-10-25 15:35:39,347 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
 INFO 2018-10-25 15:36:04,112 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:28:57,252 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 16:33:21,948 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:33:23,733 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:33:35,792 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 16:33:35,811 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-26 16:33:35,816 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:33:36,033 exceptions 25 [<users.views.UserCreateView object at 0x7f49e15c6e10>] (1062, "Duplicate entry '' for key 'username'")
+ERROR 2018-10-26 16:33:36,034 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:33:39,749 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:33:39,750 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+ERROR 2018-10-26 16:33:39,793 exceptions 25 [<users.views.UserCreateView object at 0x7f49e0582748>] (1062, "Duplicate entry '' for key 'username'")
+ERROR 2018-10-26 16:33:39,794 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:34:23,775 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:34:58,729 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f49e052e0b8>] Command # 1 (SETEX sms_code_17607162138 300 704918) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+INFO 2018-10-26 16:34:58,734 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:34:58,740 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:34:58,775 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:35:38,408 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f49e053b710>] Command # 1 (SETEX sms_code_17607162138 300 485307) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-26 16:35:38,423 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:35:38,429 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:38:28,701 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-26 16:38:29,318 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 16:38:43,041 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-26 16:38:43,055 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:39:08,495 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 16:39:08,504 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:39:08,561 exceptions 25 [<users.views.UserCreateView object at 0x7f49e0582198>] (1062, "Duplicate entry '' for key 'username'")
+ERROR 2018-10-26 16:39:08,565 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:39:43,943 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 16:39:43,949 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-26 16:39:44,123 exceptions 25 [<users.views.UserCreateView object at 0x7f49e04df1d0>] (1062, "Duplicate entry '' for key 'username'")
+ERROR 2018-10-26 16:39:44,125 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-26 16:40:58,571 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:40:58,609 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-26 16:41:13,342 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 16:41:13,345 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+ERROR 2018-10-26 16:41:13,488 exceptions 25 [<users.views.UserCreateView object at 0x7f3c1414a860>] (1062, "Duplicate entry '17607162138' for key 'mobile'")
+ERROR 2018-10-26 16:41:13,490 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-26 17:19:25,143 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 17:19:25,207 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-26 17:19:44,151 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-26 17:19:44,161 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-26 17:19:44,177 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+ERROR 2018-10-26 17:19:44,324 exceptions 25 [<users.views.UserCreateView object at 0x7f7b25e70c50>] (1062, "Duplicate entry '17607162138' for key 'mobile'")
+ERROR 2018-10-26 17:19:44,326 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-28 09:45:19,666 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 09:45:33,321 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 09:47:03,391 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:47:03,433 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:48:14,098 basehttp 124 "GET /mobiles/17607162137/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:50:19,686 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 09:50:47,892 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:50:47,930 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+ERROR 2018-10-28 09:50:47,939 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f24d520d2b0>] Command # 1 (SETEX sms_code_17607162138 300 123456) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-28 09:50:47,940 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 35
+INFO 2018-10-28 09:53:54,032 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:53:54,109 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-28 09:54:07,635 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-28 09:54:07,638 basehttp 124 "GET /usernames/12246y/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 09:54:07,652 basehttp 124 "GET /mobiles/17607162138/count/ HTTP/1.1" 200 41
+INFO 2018-10-28 09:54:07,785 basehttp 124 "POST /users/ HTTP/1.1" 201 225
+INFO 2018-10-28 09:57:48,990 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-28 09:57:49,082 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-10-28 09:58:08,957 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+WARNING 2018-10-28 09:59:08,529 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-10-28 10:16:50,087 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-28 10:16:50,219 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-10-28 10:20:56,816 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207

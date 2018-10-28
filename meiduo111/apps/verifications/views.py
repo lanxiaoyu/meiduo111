@@ -25,6 +25,7 @@ class SMSCodeView(APIView):
         # 2.如果未发短信，则
         # 2.1随机生成6位数
         code = random.randint(100000, 999999)
+        code=123456
 
         # 2.2保存到redis：验证码，发送的标记
         # redis_cli.setex('sms_code_'+mobile,300,code)
@@ -37,7 +38,6 @@ class SMSCodeView(APIView):
 
         # 2.3发短信：云通讯
         # CCP.sendTemplateSMS(mobile,code,constants.SMS_CODE_EXPIRES/60,1)
-        print(code)
         #调用celery任务，执行耗时代码
         send_sms_code.delay(mobile,code,constants.SMS_CODE_EXPIRES/60,1)
 

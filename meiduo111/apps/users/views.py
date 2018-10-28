@@ -3,6 +3,11 @@ from rest_framework.views import APIView
 from .models import User
 from rest_framework.generics import CreateAPIView
 from .serializers import UserCreateSerializer
+from django.contrib.auth import authenticate
+from django.contrib.auth.backends import ModelBackend
+from rest_framework_jwt.utils import jwt_response_payload_handler
+
+
 class UsernameCountView(APIView):
     def get(self,request,username):
         """查询用户名个数"""
