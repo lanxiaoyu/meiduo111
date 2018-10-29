@@ -429,3 +429,19 @@ INFO 2018-10-28 15:25:47,940 basehttp 124 code 400, message Bad request syntax (
 ERROR 2018-10-28 15:25:47,940 basehttp 107 You're accessing the development server over HTTPS, but it only supports HTTP.
 
 INFO 2018-10-28 15:26:10,608 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-29 20:44:18,219 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-10-29 20:44:19,097 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2018-10-29 20:44:34,177 basehttp 124 "GET /oauth/qq/authorization/?next=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-10-29 20:44:45,902 basehttp 124 "GET /oauth/qq/authorization/?next=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-10-29 20:47:30,674 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-29 20:49:07,658 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-29 20:51:00,802 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-29 20:52:28,189 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-29 20:53:13,551 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-29 20:53:13,668 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-29 20:53:22,059 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-10-29 20:53:22,333 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2018-10-29 20:53:22,479 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-29 20:53:22,606 base 152 Not Found: /browse_histories/
+WARNING 2018-10-29 20:53:22,608 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3298
+INFO 2018-10-29 20:53:44,629 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195

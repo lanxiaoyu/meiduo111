@@ -2,9 +2,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import User
 from rest_framework import generics
-from .serializers import UserCreateSerializer,UserDetailSerializer
-
+from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer
 from rest_framework.permissions import IsAuthenticated
+
+
 class UsernameCountView(APIView):
     def get(self,request,username):
         """查询用户名个数"""
@@ -48,3 +49,13 @@ class UserDetailView(generics.RetrieveAPIView):
 
     def get_object(self):
         return self.request.user
+
+class EmailView(generics.UpdateAPIView):
+    #要求登录,则request.user才有意义
+    permission_classes = [IsAuthenticated]
+    serializer_class = EmailSerializer
+
+    #修改当前登录用户的email属性
+    def get_object(self):
+        return self.request.user
+
