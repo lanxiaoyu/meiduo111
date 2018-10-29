@@ -2,10 +2,11 @@ from django.db import models
 
 
 class BaseModel(models.Model):
-    """为模型类补充字段"""
-    create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间')
-    update_time = models.DateTimeField(auto_now=True,verbose_name="修改时间")
+    # 创建时间，创建对象时，默认设置成当前时间
+    create_time = models.DateTimeField(auto_now_add=True)
+    # 更新时间，修改对象时，默认设置成当前时间
+    update_time = models.DateTimeField(auto_now=True)
 
     class Meta:
-        #抽象,用于继承,数据库迁移时不会创建表
-        abstract= True
+        # 当前模型类并不需要生成一张表，用于其它模型类的继承
+        abstract = True

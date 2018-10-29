@@ -35,7 +35,6 @@ class SMSCodeView(APIView):
         redis_pipeline.setex('sms_code_' + mobile, constants.SMS_CODE_EXPIRES, code)
         redis_pipeline.setex('sms_flag_' + mobile, constants.SMS_FLAG_EXPIRES, 1)
         redis_pipeline.execute()
-
         # 2.3发短信：云通讯
         # CCP.sendTemplateSMS(mobile,code,constants.SMS_CODE_EXPIRES/60,1)
         #调用celery任务，执行耗时代码

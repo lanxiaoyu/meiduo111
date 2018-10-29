@@ -1,13 +1,10 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import User
-from rest_framework.generics import CreateAPIView
-from .serializers import UserCreateSerializer
-from django.contrib.auth import authenticate
-from django.contrib.auth.backends import ModelBackend
-from rest_framework_jwt.utils import jwt_response_payload_handler
+from rest_framework import generics
+from .serializers import UserCreateSerializer,UserDetailSerializer
 
-
+from rest_framework.permissions import IsAuthenticated
 class UsernameCountView(APIView):
     def get(self,request,username):
         """查询用户名个数"""
@@ -32,7 +29,22 @@ class MobileCountView(APIView):
             'count':count
         })
 
-class UserCreateView(CreateAPIView):
+class UserCreateView(generics.CreateAPIView):
     """创建用户对象"""
    # queryset = 当前进行创建操作,不需要查询
     serializer_class = UserCreateSerializer
+
+
+class UserDetailView(generics.RetrieveAPIView):
+    serializer_class =UserDetailSerializer
+
+    #要求登录
+    permission_classes = [IsAuthenticated]
+
+    # 视图中封装好的代码，是根据主键查询得到的对象
+    # 需求：不根据pk查，而是获取登录的用户
+    # 解决：重写get_object()方法
+
+
+    def get_object(self):
+        return self.request.user
