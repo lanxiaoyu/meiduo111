@@ -1,10 +1,11 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import User
+from .models import User,Address
 from rest_framework import generics
 from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer,EmailActiveSerializer,AddressSerializer
 from rest_framework.permissions import IsAuthenticated
 from  rest_framework.viewsets import ModelViewSet
+from . import constants
 
 class UsernameCountView(APIView):
     def get(self,request,username):
@@ -77,3 +78,27 @@ class EmailActiveView(APIView):
 class AddressViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     serializer_class = AddressSerializer
+    #指定查询集
+    def get_queryset(self):
+        return self.request.user.addresses.filter(is_delete = False)
+    #重写
+    def list(self, request, *args, **kwargs):
+        #查询数据
+        address_list = self.get_queryset()
+        #创建序列化器对象
+        serializer = self.get_serializer(address_list,many=True)
+        #返回值的结构
+        '''
+            {
+        			'user_id': 用户编号,
+        			'default_address_id': 默认收货地址编号,
+        			'limit': 每个用户的收货地址数量上限,
+        			'addresses': 地址数据，格式如[{地址的字典},{},...]
+        		}
+    +       '''
+        return Response({
+            'user_id':self.request.user.id,
+            'default_address_id':self.request.user.default_address_id,
+            'limit':constants.ADDRESS_LIMIT,
+            'addresses':serializer.data
+        })

@@ -26,7 +26,7 @@ class User(AbstractUser):
 
 class Address(BaseModel):
     # 所属用户
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User,related_name='addresses')
     # 名称,如"家'  '公司'
     title = models.CharField(max_length=20)
     # 收件人
