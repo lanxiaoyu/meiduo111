@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import User
 from rest_framework import generics
-from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer
+from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer,EmailActiveSerializer
 from rest_framework.permissions import IsAuthenticated
 
 
@@ -59,3 +59,17 @@ class EmailView(generics.UpdateAPIView):
     def get_object(self):
         return self.request.user
 
+class EmailActiveView(APIView):
+    def get(self,request):
+        #接收数据并验证
+        serializer =EmailActiveSerializer(data=request.query_params)
+        if not serializer.is_valid():
+            return Response(serializer.errors)
+
+        #查询当前用户,并修改属性
+        user = User.objects.get(pk=serializer.validated_data.get('user_id'))
+        user.email_active = True
+        user.save()
+
+        #响应
+        return Response({'message':'OK'})

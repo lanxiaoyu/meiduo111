@@ -4,6 +4,8 @@ import re
 from rest_framework_jwt.settings import api_settings
 from .models import User
 from celery_tasks.email.tasks import send_verify_mail
+from meiduo111.utils import tjws
+from . import constants
 
 class UserCreateSerializer(serializers.Serializer):
     # 定义属性
@@ -130,3 +132,19 @@ class EmailSerializer(serializers.ModelSerializer):
 
 
         return instance
+
+class EmailActiveSerializer(serializers.Serializer):
+    token = serializers.CharField(max_length=200)
+
+    def validate(self, attrs):
+        #获取加密字符中
+        token = attrs.get('token')
+        #解密
+        data_dict = tjws.loads(token,constants.VERIFY_EMAIL_EXPIRES)
+        #判断是否过期
+        if data_dict is None:
+            raise serializers.ValidationError('激活链接过期')
+        #将获取到的user_id加入验证后的数据字典中
+        attrs['user_id'] = data_dict.get('user_id')
+
+        return attrs
