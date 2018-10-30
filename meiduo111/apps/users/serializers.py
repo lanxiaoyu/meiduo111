@@ -6,6 +6,7 @@ from .models import User,Address
 from celery_tasks.email.tasks import send_verify_mail
 from meiduo111.utils import tjws
 from . import constants
+from rest_framework.decorators import action
 
 class UserCreateSerializer(serializers.Serializer):
     # 定义属性
@@ -177,3 +178,5 @@ class AddressSerializer(serializers.ModelSerializer):
 
         address = super().create(validated_data)
         return address
+
+

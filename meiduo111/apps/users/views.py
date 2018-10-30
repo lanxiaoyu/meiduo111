@@ -7,6 +7,7 @@ from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerial
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from . import constants
+from rest_framework.decorators import action
 
 
 class UsernameCountView(APIView):
@@ -119,3 +120,31 @@ class AddressViewSet(ModelViewSet):
         address.save()
         # 响应
         return Response(status=204)
+
+    #修改标题====>***/pk/title/----put
+    #如果没有detail=False ====>***/title
+    # ^ ^addresses/(?P<pk>[^/.]+)/title/$ [name='addresses-title']
+    @action(methods=['put'],detail=True)
+    def title(self,request,pk):
+        #根据主键查询收货地址
+        address=self.get_object()
+        #接收数据,修改标题属性
+        address.title = request.data.get('title')
+        #保存
+        address.save()
+        #响应
+        return Response({'title':address.title})
+
+    # 设置默认收货地址===>^ ^addresses/(?P<pk>[^/.]+)/status/$ [name='addresses-status']
+    @action(methods=['put'],detail=True)
+    def status(self,request,pk):
+        #查询当前登录的用户
+        user=request.user
+        #修改属性
+        user.default_address_id = pk
+        #保存
+        user.save()
+        #响应
+        return Response({'message':'OK'})
+
+
