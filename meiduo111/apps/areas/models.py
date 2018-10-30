@@ -6,3 +6,6 @@ class Area(models.Model):
 
     class Meta:
         db_table = 'tb_areas'
+
+    def __srt__(self):
+        return self.name

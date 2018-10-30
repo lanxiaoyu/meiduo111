@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import User
 from rest_framework import generics
-from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer,EmailActiveSerializer
+from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer,EmailActiveSerializer,AddressSerializer
 from rest_framework.permissions import IsAuthenticated
 from  rest_framework.viewsets import ModelViewSet
 
@@ -75,4 +75,5 @@ class EmailActiveView(APIView):
         return Response({'message':'OK'})
 
 class AddressViewSet(ModelViewSet):
-    pass
+    permission_classes = [IsAuthenticated]
+    serializer_class = AddressSerializer

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django_redis import get_redis_connection
 import re
 from rest_framework_jwt.settings import api_settings
-from .models import User
+from .models import User,Address
 from celery_tasks.email.tasks import send_verify_mail
 from meiduo111.utils import tjws
 from . import constants
@@ -148,3 +148,28 @@ class EmailActiveSerializer(serializers.Serializer):
         attrs['user_id'] = data_dict.get('user_id')
 
         return attrs
+
+class AddressSerializer(serializers.ModelSerializer):
+    #关系属性,使用id接收
+    province_id = serializers.IntegerField()
+    city_id=serializers.IntegerField()
+    district_id = serializers.IntegerField()
+    #关系属性,改成非必须
+    province = serializers.StringRelatedField(read_only=True)
+    city=serializers.StringRelatedField(read_only=True)
+    district=serializers.StringRelatedField(read_only=True)
+
+    class Meta:
+        model=Address
+        #fields = []
+        #指定不需要的属性
+        #说明:user不需要传递,而是获取当前登录的用户
+        exclude=['is_delete','create_time','update_time','user']
+
+    #create
+    def create(self, validated_data):
+        #默认现实中,未指定属性user,则添加时必须报错,所以在添加前需要指定user属性
+        validated_data['user']= self.context['request'].user
+
+        address = super().create(validated_data)
+        return address
