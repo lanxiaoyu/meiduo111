@@ -170,7 +170,7 @@ class AddressSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         #判断当前是否达到上限
         user = self.context['request'].user
-        if user.addresses.filter(is_delete=False).count >=constants.ADDRESS_LIMIT:
+        if user.addresses.filter(is_delete=False).count()>= constants.ADDRESS_LIMIT:
             raise serializers.ValidationError('已经达到收货地址上限')
         #默认现实中,未指定属性user,则添加时必须报错,所以在添加前需要指定user属性
         validated_data['user']=user
