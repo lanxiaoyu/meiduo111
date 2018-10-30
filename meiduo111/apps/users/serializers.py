@@ -3,7 +3,7 @@ from django_redis import get_redis_connection
 import re
 from rest_framework_jwt.settings import api_settings
 from .models import User
-
+from celery_tasks.email.tasks import send_verify_mail
 
 class UserCreateSerializer(serializers.Serializer):
     # 定义属性
@@ -117,3 +117,16 @@ class EmailSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields=['email']
+
+#重写修改方法,在修改属性后,需要想邮箱发送邮件
+    def update(self, instance, validated_data):
+        email=validated_data.get('email')
+        instance.email = email
+        instance.save()
+
+        url=instance.generate_verify_url()
+        #发送激活邮箱:发出邮件即可给出提示,发的过程比较耗时,可以在一个新进程中执行
+        send_verify_mail.delay(email,url)
+
+
+        return instance

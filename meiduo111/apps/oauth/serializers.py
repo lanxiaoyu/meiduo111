@@ -1,3 +1,4 @@
+from django_redis import get_redis_connection
 from rest_framework import serializers
 from .models import OAuthQQuser
 from users.models import User
@@ -14,6 +15,29 @@ class QQBindSerializer(serializers.Serializer):
 
     # 验证
     def validate(self, attrs):
+        """
+        验证:短信验证码
+        1.读取redis中的验证码
+        2,读取请求中的验证码
+        3.判断是否过期
+        4,删除redis中验证码
+        5.对比
+
+        """
+        sms_code_request = attrs.get('sms_code')
+        mobile = attrs.get('mobile')
+        #2,获取redis中的短信验证码
+        redis_cli = get_redis_connection('sms_code')
+        sms_code_redis = redis_cli.get('sms_code_'+mobile)
+        #3.判断是否过期
+        if sms_code_redis is None:
+            raise serializers.ValidationError('短信验证码已经过期')
+        #4.强制立即过期
+        redis_cli.delete('sms_code' + mobile)
+        #5,判断两个验证码是否相等
+        if int(sms_code_request) != int(sms_code_redis):
+            raise serializers.ValidationError('短信验证码错误')
+
         # 验证:access_token
         # 1,解密
         data_dict = tjws.loads(attrs.get('access_token'), constants.BIND_TOKEN_EXPIRES)
