@@ -214,6 +214,14 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ),
 }
+
+# DRF扩展
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存存储,使用django的cache配置
+    'DEFAULT_USE_CACHE': 'default',
+}
 # 过期时间为2小时
 
 import datetime
