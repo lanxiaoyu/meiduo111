@@ -4,7 +4,7 @@ from .models import User
 from rest_framework import generics
 from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer,EmailActiveSerializer
 from rest_framework.permissions import IsAuthenticated
-
+from  rest_framework.viewsets import ModelViewSet
 
 class UsernameCountView(APIView):
     def get(self,request,username):
@@ -73,3 +73,6 @@ class EmailActiveView(APIView):
 
         #响应
         return Response({'message':'OK'})
+
+class AddressViewSet(ModelViewSet):
+    pass

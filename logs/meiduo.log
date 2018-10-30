@@ -644,3 +644,60 @@ INFO 2018-10-30 10:15:43,262 basehttp 124 "GET /user/ HTTP/1.1" 200 102
 INFO 2018-10-30 10:15:43,295 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
 WARNING 2018-10-30 10:15:43,332 base 152 Not Found: /browse_histories/
 WARNING 2018-10-30 10:15:43,337 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3467
+INFO 2018-10-30 11:37:50,322 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:37:50,613 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:37:52,640 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:37:52,808 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:38:11,259 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:38:11,533 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:49:18,000 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:49:26,059 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:49:37,878 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:49:46,102 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:50:04,101 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:50:08,520 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:10,475 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:14,487 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:14,675 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:14,836 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:14,998 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:15,181 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:15,360 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:15,655 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-30 11:50:20,062 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:50:37,154 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-10-30 11:50:37,269 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2018-10-30 11:50:49,800 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:50:49,864 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 233
+INFO 2018-10-30 11:50:50,116 basehttp 124 "GET /user/ HTTP/1.1" 200 102
+INFO 2018-10-30 11:50:50,164 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 11:50:50,242 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 11:50:50,252 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 5835
+INFO 2018-10-30 11:50:52,031 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:50:52,040 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2018-10-30 11:50:52,116 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/generics.py", line 68, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'AddressViewSet' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR 2018-10-30 11:50:52,309 basehttp 124 "GET /addresses/ HTTP/1.1" 500 17976
+INFO 2018-10-30 11:51:53,642 basehttp 124 "GET /areas/150000/ HTTP/1.1" 200 485
+INFO 2018-10-30 11:51:56,049 basehttp 124 "GET /areas/150400/ HTTP/1.1" 200 467
