@@ -135,6 +135,7 @@ class AddressViewSet(ModelViewSet):
         #响应
         return Response({'title':address.title})
 
+
     # 设置默认收货地址===>^ ^addresses/(?P<pk>[^/.]+)/status/$ [name='addresses-status']
     @action(methods=['put'],detail=True)
     def status(self,request,pk):

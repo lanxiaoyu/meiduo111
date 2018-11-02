@@ -49,7 +49,8 @@ INSTALLED_APPS = [
      'verifications.apps.VerificationsConfig',
     'oauth.apps.OauthConfig',
     'areas.apps.AreasConfig',
-
+    'goods.apps.GoodsConfig',
+    'contents.apps.ContentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -89,11 +90,11 @@ WSGI_APPLICATION = 'meiduo111.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'meiduo_mall',
+        'NAME': 'meiduoxinku',
         'HOST': 'localhost',
         'PORT': 3306,
-        'USER': 'meiduo',
-        'PASSWORD': 'meiduo',
+        'USER': 'yq',
+        'PASSWORD': 'yq',
     }
 }
 
@@ -265,3 +266,10 @@ EMAIL_HOST_USER = 'yangwenkai94@163.com'
 EMAIL_HOST_PASSWORD = 'www1233210'
 #收件人看到的发件人
 EMAIL_FROM = '美多商城<yangwenkai94@163.com>'
+
+# django文件存储
+DEFAULT_FILE_STORAGE = 'utils.fastdfs.fdfs_storage.FastDFSStorage'
+
+# FastDFS
+FDFS_URL = 'http://image.meiduo.site:8888/'
+FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
