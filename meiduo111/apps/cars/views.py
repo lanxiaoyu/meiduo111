@@ -30,12 +30,23 @@ class CartView(APIView):
 
         if user is None:
             # 如果未登录，则存入cookie
-            cart_dict = {
-                sku_id: {
-                    'count': count,
-                    'selected': True
-                }
+            # 读取cookies中的数据
+            cart_str = request.COOKIES.get('cart')
+            if cart_str is None:
+                cart_dict = {}
+            else:
+                cart_dict = myjson.loads(cart_str)
+            # 取出原数量
+            if sku_id in cart_dict:
+                count_cart = cart_dict[sku_id]['count']
+            else:
+                count_cart = 0
+            # 修改数据
+            cart_dict[sku_id] = {
+                'count': count + count_cart,
+                'selected': True
             }
+            # 写cookie
             cart_str = myjson.dumps(cart_dict)
             response.set_cookie('cart', cart_str, max_age=60 * 60 * 24 * 14)
         else:
