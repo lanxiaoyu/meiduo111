@@ -1645,3 +1645,1022 @@ INFO 2018-10-30 21:21:57,006 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
 INFO 2018-10-30 21:21:57,091 basehttp 124 "POST /addresses/ HTTP/1.1" 201 226
 INFO 2018-10-30 21:22:02,993 basehttp 124 "OPTIONS /addresses/4/status/ HTTP/1.1" 200 0
 INFO 2018-10-30 21:22:03,018 basehttp 124 "PUT /addresses/4/status/ HTTP/1.1" 200 16
+ERROR 2018-11-03 13:13:17,512 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-11-03 13:13:18,007 basehttp 124 "GET / HTTP/1.1" 400 70166
+ERROR 2018-11-03 13:13:19,359 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-11-03 13:13:19,480 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 70244
+INFO 2018-11-03 13:13:39,236 basehttp 124 "GET /admin HTTP/1.1" 301 0
+INFO 2018-11-03 13:13:39,451 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-11-03 13:13:39,614 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+INFO 2018-11-03 13:13:39,766 basehttp 124 "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+INFO 2018-11-03 13:13:39,785 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+INFO 2018-11-03 13:13:40,066 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2018-11-03 13:13:40,259 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2018-11-03 13:13:40,334 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+WARNING 2018-11-03 13:13:40,957 base 152 Not Found: /favicon.ico
+WARNING 2018-11-03 13:13:40,960 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 6831
+INFO 2018-11-03 13:13:50,653 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2018-11-03 13:13:50,807 basehttp 124 "GET /admin/ HTTP/1.1" 200 7508
+INFO 2018-11-03 13:13:50,874 basehttp 124 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2018-11-03 13:13:51,055 basehttp 124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2018-11-03 13:13:51,071 basehttp 124 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2018-11-03 13:13:51,090 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2018-11-03 13:14:05,488 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 4664
+INFO 2018-11-03 13:14:05,529 basehttp 124 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2018-11-03 13:14:05,633 basehttp 124 "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+INFO 2018-11-03 13:14:05,652 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+INFO 2018-11-03 13:14:05,673 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 13:14:05,678 basehttp 124 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2018-11-03 13:14:05,681 basehttp 124 "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+INFO 2018-11-03 13:14:05,715 basehttp 124 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+INFO 2018-11-03 13:14:05,728 basehttp 124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+INFO 2018-11-03 13:14:05,743 basehttp 124 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+INFO 2018-11-03 13:14:05,764 basehttp 124 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2018-11-03 13:14:06,066 basehttp 124 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2018-11-03 13:14:13,195 basehttp 124 "GET /admin/goods/goods/3/change/ HTTP/1.1" 200 87286
+INFO 2018-11-03 13:14:13,300 basehttp 124 "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+INFO 2018-11-03 13:14:13,353 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+INFO 2018-11-03 13:14:13,386 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 13:14:13,429 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+INFO 2018-11-03 13:14:13,452 basehttp 124 "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO 2018-11-03 13:14:13,462 basehttp 124 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+INFO 2018-11-03 13:14:13,482 basehttp 124 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO 2018-11-03 13:14:13,547 basehttp 124 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2018-11-03 13:14:15,008 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 338
+INFO 2018-11-03 13:14:15,206 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2018-11-03 13:14:15,214 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18818
+INFO 2018-11-03 13:14:15,303 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2018-11-03 13:14:15,349 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2018-11-03 13:14:15,384 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2018-11-03 13:14:15,386 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2018-11-03 13:14:15,390 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2018-11-03 13:14:15,397 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2018-11-03 13:14:15,527 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2018-11-03 13:14:15,618 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2018-11-03 13:14:38,148 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 4664
+INFO 2018-11-03 13:14:41,275 basehttp 124 "GET /admin/ HTTP/1.1" 200 7508
+INFO 2018-11-03 13:14:43,361 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15619
+INFO 2018-11-03 13:14:43,418 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 13:14:51,966 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+INFO 2018-11-03 13:14:52,070 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 13:15:26,460 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs'
+ERROR 2018-11-03 13:15:27,248 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212795
+ERROR 2018-11-03 13:15:44,848 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs'
+ERROR 2018-11-03 13:15:45,162 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212795
+INFO 2018-11-03 13:15:48,305 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+ERROR 2018-11-03 13:16:19,590 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs'
+ERROR 2018-11-03 13:16:20,192 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212795
+ERROR 2018-11-03 13:18:00,279 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs.fdfs_storage'
+ERROR 2018-11-03 13:18:00,698 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212897
+INFO 2018-11-03 13:18:07,951 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+ERROR 2018-11-03 13:18:10,130 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs.fdfs_storage'
+ERROR 2018-11-03 13:18:10,357 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212897
+ERROR 2018-11-03 13:19:40,871 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'utils.fastdfs.fdfs_storage' has no attribute 'FastDFSStorage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "utils.fastdfs.fdfs_storage" does not define a "FastDFSStorage" attribute/class
+ERROR 2018-11-03 13:19:41,213 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 223685
+INFO 2018-11-03 13:19:49,480 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+ERROR 2018-11-03 13:19:51,372 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'utils.fastdfs.fdfs_storage' has no attribute 'FastDFSStorage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "utils.fastdfs.fdfs_storage" does not define a "FastDFSStorage" attribute/class
+ERROR 2018-11-03 13:19:51,821 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 223685
+INFO 2018-11-03 14:42:39,847 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+ERROR 2018-11-03 14:42:43,786 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils.fastdfs.fdfs_storage'
+ERROR 2018-11-03 14:42:44,086 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 212897
+ERROR 2018-11-03 15:11:17,510 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'utils.fastdfs.storage' has no attribute 'FastDFSStorage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 94, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 332, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "utils.fastdfs.storage" does not define a "FastDFSStorage" attribute/class
+ERROR 2018-11-03 15:11:17,909 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 223560
+INFO 2018-11-03 15:36:56,780 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+ERROR 2018-11-03 15:37:13,285 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 59
+ERROR 2018-11-03 15:37:28,596 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 59
+ERROR 2018-11-03 15:39:27,959 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 59
+ERROR 2018-11-03 15:40:07,185 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 59
+INFO 2018-11-03 15:46:46,635 basehttp 124 "GET /admin/ HTTP/1.1" 200 7508
+INFO 2018-11-03 15:46:51,156 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15619
+INFO 2018-11-03 15:46:51,315 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 15:46:56,363 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+INFO 2018-11-03 15:46:56,457 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 15:47:05,984 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 95, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/python/Desktop/meiduo/meiduo111/meiduo111/utils/fastdfs/storage.py", line 16, in save
+    ret = client.upload_by_buffer(content.read())
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/fdfs_client/client.py", line 125, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/fdfs_client/tracker_client.py", line 381, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2018-11-03 15:47:06,384 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 207791
+INFO 2018-11-03 16:16:23,090 basehttp 124 "GET /admin/goods/skuimage HTTP/1.1" 301 0
+INFO 2018-11-03 16:16:23,656 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15619
+INFO 2018-11-03 16:16:23,817 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 16:16:27,119 basehttp 124 "GET /admin/goods/skuimage/43/change/ HTTP/1.1" 200 7080
+INFO 2018-11-03 16:16:27,213 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 16:16:33,739 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15619
+INFO 2018-11-03 16:16:36,050 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6596
+INFO 2018-11-03 16:16:36,144 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 16:16:49,481 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1051, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1050, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1000, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 297, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/db/models/fields/files.py", line 95, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/python/Desktop/meiduo/meiduo111/meiduo111/utils/fastdfs/storage.py", line 16, in save
+    ret = client.upload_by_buffer(content.read())
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/fdfs_client/client.py", line 125, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/fdfs_client/tracker_client.py", line 381, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2018-11-03 16:16:49,841 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 207791
+INFO 2018-11-03 16:28:45,178 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 302 0
+INFO 2018-11-03 16:28:45,621 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 16096
+INFO 2018-11-03 16:28:45,771 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 16:28:45,923 basehttp 124 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2018-11-03 16:28:49,745 basehttp 124 "GET /admin/goods/skuimage/44/change/ HTTP/1.1" 200 7042
+INFO 2018-11-03 16:28:49,853 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 11:16:21,655 basehttp 124 "GET /admin/goods/skuimage/44/change/ HTTP/1.1" 200 7042
+INFO 2018-11-04 11:16:21,835 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-04 11:16:28,441 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 77, in wrap_attributeerrors
+    yield
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 129, in authenticate
+    self.enforce_csrf(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 140, in enforce_csrf
+    check.process_request(request)
+AttributeError: 'CSRFCheck' object has no attribute 'process_request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 81, in wrap_attributeerrors
+    six.reraise(type(exc), exc, info[2])
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 77, in wrap_attributeerrors
+    yield
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 129, in authenticate
+    self.enforce_csrf(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 140, in enforce_csrf
+    check.process_request(request)
+rest_framework.request.WrappedAttributeError: 'CSRFCheck' object has no attribute 'process_request'
+ERROR 2018-11-04 11:16:28,670 basehttp 124 "GET / HTTP/1.1" 500 156858
+ERROR 2018-11-04 11:23:41,062 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 77, in wrap_attributeerrors
+    yield
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 129, in authenticate
+    self.enforce_csrf(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 140, in enforce_csrf
+    check.process_request(request)
+AttributeError: 'CSRFCheck' object has no attribute 'process_request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 81, in wrap_attributeerrors
+    six.reraise(type(exc), exc, info[2])
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 77, in wrap_attributeerrors
+    yield
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 129, in authenticate
+    self.enforce_csrf(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/rest_framework/authentication.py", line 140, in enforce_csrf
+    check.process_request(request)
+rest_framework.request.WrappedAttributeError: 'CSRFCheck' object has no attribute 'process_request'
+ERROR 2018-11-04 11:23:41,307 basehttp 124 "GET / HTTP/1.1" 500 156858
+INFO 2018-11-04 11:24:48,144 basehttp 124 "GET /admin/ HTTP/1.1" 200 7874
+INFO 2018-11-04 11:24:48,324 basehttp 124 "GET /admin/ HTTP/1.1" 200 7874
