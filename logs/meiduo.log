@@ -2888,3 +2888,46 @@ INFO 2018-11-04 17:52:50,065 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9
 INFO 2018-11-04 17:52:54,187 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 52
 INFO 2018-11-04 18:04:34,213 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
 INFO 2018-11-04 18:13:22,853 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:31,787 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:32,480 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:34,299 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:36,646 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:37,233 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:38,629 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:39,929 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:41,148 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:42,455 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:43,807 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:42:44,951 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:44:31,466 basehttp 124 "GET /skus/search/?text=%E6%89%8B%E6%9C%BA&page=1&page_size=6 HTTP/1.1" 200 2587
+INFO 2018-11-04 18:44:51,823 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-04 18:44:52,275 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:44:52,285 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:29,831 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:29,860 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:31,359 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:31,364 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:32,780 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:32,781 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:34,359 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:34,360 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:36,451 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:36,468 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:37,657 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:37,664 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:38,626 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:38,635 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:40,210 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:40,227 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:41,203 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:41,217 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:42,345 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:42,359 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:43,502 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:43,504 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:44,905 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:44,917 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:46,062 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:46,063 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
+WARNING 2018-11-04 18:47:47,192 base 152 Not Found: /browse_histories/
+WARNING 2018-11-04 18:47:47,211 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 8262
