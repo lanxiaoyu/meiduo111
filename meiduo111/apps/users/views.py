@@ -8,6 +8,9 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from . import constants
 from rest_framework.decorators import action
+from django_redis import get_redis_connection
+from goods.models import SKU
+from goods.serializers import SKUSerializer
 
 
 class UsernameCountView(APIView):
@@ -149,6 +152,26 @@ class AddressViewSet(ModelViewSet):
         return Response({'message':'OK'})
 
 
-class BrowseHistoryView(generics.CreateAPIView):
+class BrowseHistoryView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
-    serializer_class = BrowseHistorySerializer
+ # serializer_class = BrowseHistorySerializer
+    def get_serializer_class(self):
+        # 创建与查询列表使用不同的序列化器
+        if self.request.method == 'GET':
+            return SKUSerializer
+        else:
+            return BrowseHistorySerializer
+
+    # 查询需要指定查询集
+    # queryset = SKU.objects.all()
+    def get_queryset(self):
+        # 连接redis
+        redis_cli = get_redis_connection('history')
+        # 查询当前登录用户的浏览记录[sku_id,sku_id,...]
+        key = 'history_%d' % self.request.user.id
+        sku_ids = redis_cli.lrange(key, 0, -1)
+        # 遍历列表，根据sku_id查询商品对象
+        skus = []
+        for sku_id in sku_ids:
+            skus.append(SKU.objects.get(pk=int(sku_id)))
+        return skus  # [sku,sku,sku,...]

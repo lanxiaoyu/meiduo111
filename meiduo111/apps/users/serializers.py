@@ -208,4 +208,4 @@ class BrowseHistorySerializer(serializers.Serializer):
             # 4.如果超过长度则删除最后一个
             redis_cli.rpop(key)
 
-        return sku_id
+        return {'sku_id': sku_id}
