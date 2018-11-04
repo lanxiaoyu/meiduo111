@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from .models import User, Address
 from rest_framework import generics
 from .serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer, EmailActiveSerializer, \
-    AddressSerializer
+    AddressSerializer, BrowseHistorySerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from . import constants
@@ -149,3 +149,6 @@ class AddressViewSet(ModelViewSet):
         return Response({'message':'OK'})
 
 
+class BrowseHistoryView(generics.CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = BrowseHistorySerializer
