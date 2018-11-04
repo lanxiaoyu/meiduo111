@@ -296,7 +296,7 @@ GENERATE_STATIC_HTML_PATH = os.path.join(os.path.dirname(os.path.dirname(BASE_DI
 CRONJOBS_LOG = os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log')
 CRONJOBS = [
     # 每5分钟执行一次生成主页静态文件
-    ('*/5 * * * *', 'contents.crons.generate_static_index_html', '>> /home/python/Desktop/meiduo_mall/meiduo_api/logs/crontab.log')
+    ('*/5 * * * *', 'contents.crons.generate_static_index_html', '>> '+CRONJOBS_LOG)
 ]
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'

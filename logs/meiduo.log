@@ -2664,3 +2664,10 @@ rest_framework.request.WrappedAttributeError: 'CSRFCheck' object has no attribut
 ERROR 2018-11-04 11:23:41,307 basehttp 124 "GET / HTTP/1.1" 500 156858
 INFO 2018-11-04 11:24:48,144 basehttp 124 "GET /admin/ HTTP/1.1" 200 7874
 INFO 2018-11-04 11:24:48,324 basehttp 124 "GET /admin/ HTTP/1.1" 200 7874
+INFO 2018-11-04 12:22:09,538 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-04 12:22:09,608 base 152 Not Found: /categories/157/skus/
+WARNING 2018-11-04 12:22:09,619 basehttp 124 "GET /categories/157/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6907
+WARNING 2018-11-04 12:22:09,648 base 152 Not Found: /categories/157/
+WARNING 2018-11-04 12:22:09,653 basehttp 124 "GET /categories/157/ HTTP/1.1" 404 6843
+WARNING 2018-11-04 12:22:09,884 base 152 Not Found: /cart/
+WARNING 2018-11-04 12:22:09,889 basehttp 124 "GET /cart/ HTTP/1.1" 404 6813

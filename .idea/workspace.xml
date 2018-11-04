@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c1d7a5f-00fb-43ca-90e8-1082f99c2ce9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ee46db3-a31f-4ed2-a824-f074a1dfce22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/meiduo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/apps/contents/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/apps/contents/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/apps/contents/crons.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/apps/contents/crons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/apps/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/apps/goods/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/apps/goods/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiduo111/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/utils/fastdfs/client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/utils/fastdfs/client.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo111/utils/goods_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo111/utils/goods_category.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +48,8 @@
       <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/meiduo111/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="286" column="32" lean-forward="true" selection-start-line="286" selection-start-column="32" selection-end-line="286" selection-end-column="32" />
+            <state relative-caret-position="212">
+              <caret line="298" column="13" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -385,12 +373,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540453009566</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="定时任务">
+      <created>1541304949974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541304949980</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="968" height="704" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5014985" side_tool="true" weight="0.48734176" />
@@ -454,7 +448,8 @@
     <MESSAGE value="统计用户手机号是否存在" />
     <MESSAGE value="用户注册接口的完成" />
     <MESSAGE value="完成jwt认证" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成jwt认证" />
+    <MESSAGE value="定时任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时任务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -820,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/meiduo111/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="286" column="32" lean-forward="true" selection-start-line="286" selection-start-column="32" selection-end-line="286" selection-end-column="32" />
+        <state relative-caret-position="212">
+          <caret line="298" column="13" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
         </state>
       </provider>
     </entry>
